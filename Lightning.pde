@@ -5,7 +5,7 @@ PImage img2;
 void setup(){
   size(700,700);
   background(30, 18, 248);
-  frameRate(6);
+  noLoop();
   img = loadImage("noeasyshadow.png");
   img1 = loadImage("noeasy.png");
   img2 = loadImage("track.png");
@@ -20,12 +20,11 @@ void draw(){
   while(x <= 450){   
     int r = (int)(Math.random()*8)+1;
     int m = (int)(Math.random()*20)-12;
-    int c = (int)(Math.random()*20)-9;
     stroke(250);
     strokeWeight((float)(Math.random()*3));
     line(x, y, x + r, y - m); //left
     line(a, b, a - r, b - m); //right
-    strokeWeight(7);
+    strokeWeight(9);
     stroke(250, 60);
     line(x, y, x + r, y - m);
     line(a, b, a - r, b - m);
