@@ -12,7 +12,7 @@ void setup(){
 }
 
 void draw(){
-  background(30, 18, 248, 10);
+  background(30, 18, 248);
   int x = 0;
   int y = 80;
   int a = 700;
