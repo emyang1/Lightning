@@ -18,7 +18,6 @@ void draw(){
   int a = 700;
   int b = 360;
   while(x <= 450){  
-    background(30, 18, 248, 50);
     int r = (int)(Math.random()*8)+1;
     int m = (int)(Math.random()*20)-12;
     stroke(250);
